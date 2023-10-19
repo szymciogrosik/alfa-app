@@ -2,24 +2,6 @@
   "AWSEBDockerrunVersion": 2,
   "containerDefinitions": [
     {
-      "name": "amigoscode-api",
-      "image": "szymciogrosik/amigoscode-api:20.04.2023.13.39.03",
-      "essential": true,
-      "memory": 512,
-      "portMappings": [
-        {
-          "hostPort": 8080,
-          "containerPort": 8080
-        }
-      ],
-      "environment": [
-        {
-          "name": "SPRING_PROFILES_ACTIVE",
-          "value": "test"
-        }
-      ]
-    },
-    {
       "name": "amigoscode-react",
       "image": "szymciogrosik/amigoscode-react:19.10.2023.18.00.20",
       "essential": true,
