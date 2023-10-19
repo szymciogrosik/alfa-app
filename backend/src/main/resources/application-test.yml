@@ -4,6 +4,6 @@ aws:
 
 spring:
   datasource:
-    url: jdbc-secretsmanager:postgresql://alfa-app-db.chxwvpt1rgy4.eu-central-1.rds.amazonaws.com:5432/customer
+    url: jdbc-secretsmanager:postgresql://alfa-app-env-db.chxwvpt1rgy4.eu-central-1.rds.amazonaws.com:5432/customer
     username: test/full-stack/postgres
     driver-class-name: com.amazonaws.secretsmanager.sql.AWSSecretsManagerPostgreSQLDriver
