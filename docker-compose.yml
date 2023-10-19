@@ -15,7 +15,7 @@ services:
     restart: unless-stopped
   amigoscode-api:
     container_name: amigoscode-api
-    image: amigoscode/amigoscode-api
+    image: szymciogrosik/amigoscode-api
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/customer
     ports:
@@ -27,7 +27,7 @@ services:
     restart: unless-stopped
   amigoscode-react:
     container_name: amigoscode-react
-    image: amigoscode/amigoscode-react
+    image: szymciogrosik/amigoscode-react
     build:
       context: frontend/react
       args:
