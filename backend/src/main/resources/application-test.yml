@@ -4,4 +4,6 @@ aws:
 
 spring:
   datasource:
-    url: postgres://alfa_backend:HoM2huLhefDTOBT@alfa-db.flycast:5432/alfa_backend?sslmode=disable/customer
+    url: postgresql://alfa-db.flycast:5432/customer
+    username: postgres
+    password: Kk1I77RWt0Mkyxv
