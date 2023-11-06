@@ -1,0 +1,23 @@
+# fly.toml app configuration file generated for alfa-backend on 2023-11-06T17:08:28+01:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "alfa-backend"
+primary_region = "waw"
+swap_size_mb = 512
+
+[build]
+  image = "szymciogrosik/amigoscode-api:latest"
+
+[env]
+  SPRING_PROFILES_ACTIVE = "test"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 0
+  max_machines_running = 0
+  processes = ["app"]

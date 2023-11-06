@@ -1,0 +1,22 @@
+# fly.toml app configuration file generated for alfa-frontend on 2023-11-06T15:50:28+01:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "alfa-frontend"
+primary_region = "waw"
+swap_size_mb = 512
+
+[build]
+  image = "szymciogrosik/amigoscode-react:latest"
+
+[build.args]
+  api_base_url = "https://alfa-backend.fly.dev"
+
+[http_service]
+  internal_port = 5173
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
