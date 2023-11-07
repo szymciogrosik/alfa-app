@@ -9,9 +9,6 @@ primary_region = "waw"
 [build]
   image = "szymciogrosik/amigoscode-react:latest"
 
-[build.args]
-  api_base_url = "https://alfa-backend.fly.dev"
-
 [http_service]
   internal_port = 5173
   force_https = true
