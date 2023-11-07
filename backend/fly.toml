@@ -5,7 +5,6 @@
 
 app = "alfa-backend"
 primary_region = "waw"
-swap_size_mb = 512
 
 [build]
   image = "szymciogrosik/amigoscode-api:latest"
